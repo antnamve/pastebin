@@ -57,3 +57,4 @@ end
 
 gem 'pry'
 gem "railsui", "~> 2.0", :github => "getrailsui/railsui", :branch => "main"
+gem 'faker'

@@ -1,16 +1,33 @@
-<!-- ActionView::Helpers::FormTagHelper -->
-<%= tag.div class: "form-group" do %>
-  <%= label_tag :textarea, "Speak your mind", class: "form-label" %>
-  <%= text_area_tag "textarea", class: "form-input" %>
+<%= form_with model: @paste do |f| %>
+  <div class="form-group w-1/2">
+    <%= f.label :content, class: "form-label" %>
+    <%= f.rich_text_area :content %>
+  </div>
+
+  <div class="form-group w-1/2">
+    <div class="form-group">
+      <%= f.label :category, class: "form-label" %>
+      <%= f.text_field :category, class: "form-input", "aria-label": "Email" %>
+
+      <%= f.label :tags, class: "form-label" %>
+      <%= f.text_field :tags, class: "form-input", "aria-label": "Email" %>
+
+      <%= f.label :paste_expiration, class: "form-label" %>
+      <%= f.text_field :email, class: "form-input", "aria-label": "Email" %>
+
+      <%= f.label :paste_exposure, class: "form-label" %>
+      <%= f.text_field :email, class: "form-input", "aria-label": "Email" %>
+
+      <%= f.label :folder, class: "form-label" %>
+      <%= f.text_field :email, class: "form-input", "aria-label": "Email" %>
+
+      <%= f.label :password, class: "form-label" %>
+      <%= f.text_field :email, class: "form-input", "aria-label": "Email" %>
+
+      <%= f.label :paste_name, class: "form-label" %>
+      <%= f.text_field :email, class: "form-input", "aria-label": "Email" %>
+    </div>
+  </div>
 <% end %>
 
-<!-- ActionView::Helpers::FormHelper -->
-<%= form_with with: @form do |f| %>
-  <% tag.div class: "form-group" do %>
-    <%= f.label :textarea, "Speak your mind", class: "form-label" %>
-    <%= f.text_area :textarea, class: "form-input" %>
-  <% end %>
-  <%= f.submit class: "btn btn-primary" %>
-<% end %>
-
-<%= render "shared/footer" %>
+  <%= render "shared/footer" %>
