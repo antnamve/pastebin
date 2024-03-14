@@ -4,5 +4,23 @@
 
 import { application } from "./application"
 
+import ComboSelectController from "./combo_select_controller"
+application.register("combo-select", ComboSelectController)
+
+import DropdownController from "./dropdown_controller"
+application.register("dropdown", DropdownController)
+
 import HelloController from "./hello_controller"
 application.register("hello", HelloController)
+
+import ModalController from "./modal_controller"
+application.register("modal", ModalController)
+
+import NavController from "./nav_controller"
+application.register("nav", NavController)
+
+import TabsController from "./tabs_controller"
+application.register("tabs", TabsController)
+
+import TooltipController from "./tooltip_controller"
+application.register("tooltip", TooltipController)
