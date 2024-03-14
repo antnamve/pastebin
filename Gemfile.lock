@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/rails/rails.git
-  revision: 3efae445196da943c0532a00f6dfbafc74ae879d
+  revision: 93b89b170bbfabb7c456950512845a0fc68ba002
   branch: main
   specs:
     actioncable (7.2.0.alpha)
@@ -99,7 +99,7 @@ GEM
   specs:
     ast (2.4.2)
     base64 (0.2.0)
-    bigdecimal (3.1.6)
+    bigdecimal (3.1.7)
     bindex (0.8.1)
     bootsnap (1.18.3)
       msgpack (~> 1.2)
